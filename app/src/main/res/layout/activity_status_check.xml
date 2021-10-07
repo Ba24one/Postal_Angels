@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF5FF"
+    tools:context=".StatusCheck">
+
+    <Button
+        android:id="@+id/btnbackhome"
+        android:layout_width="155sp"
+        android:layout_height="32sp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/darkbtn_bg"
+        android:fontFamily="@font/poppins"
+        android:text="Back to home"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="221dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/statuscheck_icon" />
+
+    <EditText
+        android:id="@+id/inputcheckstatus"
+        android:layout_width="306dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/input_bg"
+        android:backgroundTint="#FFF"
+        android:drawableLeft="@drawable/packageid_icon"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:foregroundTint="#fff"
+        android:hint="Package code"
+        android:inputType="textPersonName"
+        android:padding="8dp"
+        android:textColor="#8797BC"
+        android:textColorHint="#CACACA"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <Button
+        android:id="@+id/btntrack"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_marginTop="20dp"
+        android:width="130sp"
+        android:background="@drawable/greenbtn_bg"
+        android:text="Track"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputcheckstatus" />
+
+    <TextView
+        android:id="@+id/statustxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:width="250sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Welcome!"
+        android:textAlignment="center"
+        android:textColor="#42A0F0"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btntrack" />
+
+    <ImageView
+        android:id="@+id/notrecievedimage"
+        android:visibility="invisible"
+        android:layout_width="229dp"
+        android:layout_height="151dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnbackhome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/notrecieved_icon" />
+
+    <ImageView
+        android:id="@+id/warehouseimage"
+        android:visibility="invisible"
+        android:layout_width="166dp"
+        android:layout_height="146dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnbackhome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/warehouse_icon" />
+
+    <ImageView
+        android:id="@+id/onthewayimage"
+        android:visibility="invisible"
+        android:layout_width="207dp"
+        android:layout_height="151dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnbackhome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ontheway_icon" />
+
+    <ImageView
+        android:id="@+id/deliveredimage"
+        android:visibility="invisible"
+        android:layout_width="230dp"
+        android:layout_height="154dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnbackhome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/delivered_icon" />
+
+    <ImageView
+        android:id="@+id/welcomeimage"
+        android:layout_width="277dp"
+        android:layout_height="176dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnbackhome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/welcome_icon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

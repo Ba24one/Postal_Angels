@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF5FF"
+    tools:context=".PostalPage">
+
+    <Button
+        android:id="@+id/btnbackhome4"
+        android:layout_width="155sp"
+        android:layout_height="32sp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/darkbtn_bg"
+        android:fontFamily="@font/poppins"
+        android:text="Back to home"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btndelivered"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_marginBottom="60dp"
+        android:width="140sp"
+        android:background="@drawable/greenbtn_bg"
+        android:text="Delivered"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnbackhome4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/deliveredDate"
+        android:layout_width="306dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="50dp"
+        android:width="200sp"
+        android:height="40sp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/delivereddate_icon"
+        android:drawablePadding="16dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="center_vertical"
+        android:hint="Date-Month-Year"
+        android:paddingLeft="10dp"
+        android:textColor="#8797BC"
+        android:textColorHint="#CACACA"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btndelivered"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/postalpackagecode"
+        android:layout_width="306dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/input_bg"
+        android:backgroundTint="#FFF"
+        android:drawableLeft="@drawable/packageid_icon"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:foregroundTint="#fff"
+        android:hint="Package Code"
+        android:inputType="textPersonName"
+        android:padding="8dp"
+        android:textColor="#8797BC"
+        android:textColorHint="#CACACA"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/deliveredDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnviewpending"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_marginBottom="50dp"
+        android:width="150sp"
+        android:background="@drawable/bluebtn_bg"
+        android:text="View pending"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/postalpackagecode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnviewpending"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/postal_icon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
